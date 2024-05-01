@@ -1,7 +1,7 @@
 ### Todo
 
-- [ ] Login Page
-- [ ] Signup Page
+- [ ] Landing Page
+- [ ] Routings
 - [ ] Home Page designs
   - [ ] Home Page Sidebar
 - [ ] Appwrite connection
@@ -20,3 +20,5 @@
 - [x] Committed upto 01/05/2024 
 - [x] Judge0 connection
 - [x] Monaco integration
+- [x] Login Page
+- [x] Signup Page

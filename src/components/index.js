@@ -5,6 +5,14 @@ import ThemeDropdown from "./ThemeDropdown";
 import OutputWindow from "./OutputWindow";
 import CustomInput from "./CustomInput";
 import OutputDetails from "./OutputDetails";
+import Login from "./Login";
+import Signup from "./Signup";
+import Input from "./Input";
+import Button from "./Button";
+import AuthLayout from "./AuthLayout";
+import Header from "./Header/Header";
+import Footer from "./Footer/Footer";
+import Logo from "./Logo";
 
 export {
     CodeEditorWindow,
@@ -14,4 +22,12 @@ export {
     OutputWindow,
     CustomInput,
     OutputDetails,
+    Login,
+    Signup,
+    Input,
+    Button,
+    AuthLayout,
+    Header,
+    Footer,
+    Logo,
 }
