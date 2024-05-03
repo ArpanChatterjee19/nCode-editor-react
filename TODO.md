@@ -4,7 +4,12 @@
 - [ ] Routings
 - [ ] Home Page designs
   - [ ] Home Page Sidebar
+    - [ ] Run button
+    - [ ] Search button
+
 - [ ] Appwrite connection
+- [ ] Loader Animation
+- [ ] Guide
 
 
 
