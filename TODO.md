@@ -17,8 +17,8 @@
 
 ### Done ✓
 
-- [x] Committed upto 01/05/2024 
+- [x] Committed upto 02/05/2024 
 - [x] Judge0 connection
 - [x] Monaco integration
 - [x] Login Page
-- [x] Signup Page
+- [x] Signup Pageḍ
