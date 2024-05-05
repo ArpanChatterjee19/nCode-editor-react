@@ -13,6 +13,8 @@ import AuthLayout from "./AuthLayout";
 import Header from "./Header/Header";
 import Footer from "./Footer/Footer";
 import Logo from "./Logo";
+import SandboxEditorsWindow from "./SandboxEditorsWindow";
+import SandboxOutputWindow from "./SandboxOutputWindow";
 
 export {
     CodeEditorWindow,
@@ -30,4 +32,6 @@ export {
     Header,
     Footer,
     Logo,
+    SandboxEditorsWindow,
+    SandboxOutputWindow,
 }

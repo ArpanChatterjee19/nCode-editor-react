@@ -7,6 +7,7 @@ import App from './App.jsx'
 import Home from './pages/Home.jsx'
 import Login from './pages/Login.jsx'
 import Signup from './pages/Signup.jsx';
+import Sandbox from './pages/Sandbox.jsx';
 import { AuthLayout } from './components/index.js';
 import './index.css'
 
@@ -37,6 +38,14 @@ const router = createBrowserRouter([
             element: (
                 <AuthLayout authentication={false}>
                     <Signup />
+                </AuthLayout>
+            ),
+        },
+        {
+            path: "/sandbox",
+            element: (
+                <AuthLayout authentication>
+                    <Sandbox />
                 </AuthLayout>
             ),
         },
