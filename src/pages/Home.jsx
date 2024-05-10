@@ -151,7 +151,7 @@ function Home() {
 
   function handleThemeChange(themeOption) {
     const theme = themeOption;
-    console.log("theme...", theme);
+    // console.log("theme...", theme);
 
     if (["light", "vs-dark"].includes(theme.value)) {
       setTheme(theme);
@@ -179,18 +179,26 @@ function Home() {
         draggable
         pauseOnHover
       />
-      <div className="flex flex-row space-x-4 items-start px-4 py-4">
+      <div className="flex flex-row space-x-4 items-start px-4 pt-4 h-[calc(100vh-45px)]">
         <Sidebar />
         <div className="flex flex-col w-full h-full justify-start items-end">
-          <div className="flex flex-row">
-            <div className="px-4 py-2">
+          <div className="flex flex-row justify-between w-full">
+            <div className="flex flex-row gap-2 px-4 py-2">
               <LanguageDropdown onSelectChange={onSelectChange} />
-            </div>
-            <div className="px-4 py-2">
               <ThemeDropdown
                 handleThemeChange={handleThemeChange}
                 theme={theme}
               />
+            </div>
+            <div className="px-4 py-2">
+            <button
+              onClick={handleCompile}
+              disabled={!code}
+              className={`border-2 border-black z-10 rounded-md shadow-[5px_5px_0px_0px_rgba(0,0,0)] px-4 py-2 hover:shadow transition duration-200 bg-white flex-shrink-0
+                ${!code ? "opacity-50" : ""}`}
+            >
+              {processing ? "Processing..." : "Compile and Execute"}
+            </button>
             </div>
           </div>
           <CodeEditorWindow
@@ -200,21 +208,14 @@ function Home() {
             theme={theme.value}
           />
         </div>
-        <div className="right-container flex flex-shrink-0 w-[30%] flex-col">
+        <div className="text-start right-container flex flex-shrink-0 w-[30%] flex-col">
           <OutputWindow outputDetails={outputDetails} />
           <div className="flex flex-col items-end">
             <CustomInput
               customInput={customInput}
               setCustomInput={setCustomInput}
             />
-            <button
-              onClick={handleCompile}
-              disabled={!code}
-              className={`mt-4 border-2 border-black z-10 rounded-md shadow-[5px_5px_0px_0px_rgba(0,0,0)] px-4 py-2 hover:shadow transition duration-200 bg-white flex-shrink-0
-                ${!code ? "opacity-50" : ""}`}
-            >
-              {processing ? "Processing..." : "Compile and Execute"}
-            </button>
+            
           </div>
           {outputDetails && <OutputDetails outputDetails={outputDetails} />}
         </div>

@@ -15,6 +15,13 @@ const ThemeDropdown = ({ handleThemeChange, theme }) => {
       value={theme}
       styles={customStyles}
       onChange={handleThemeChange}
+      theme={theme => ({
+        ...theme,
+        colors: {
+            ...theme,
+            whiteCustom: '#fafafa',  // Placeholder color
+        },
+    })}
     />
   );
 };

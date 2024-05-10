@@ -7,7 +7,6 @@
     - [ ] Search button
 
 - [ ] Appwrite connection
-- [ ] Loader Animation
 - [ ] Guide
 
 
@@ -21,10 +20,11 @@
 
 ### Done ✓
 
-- [x] Committed upto 06/05/2024 
+- [x] Committed upto 11/05/2024 
 - [x] Judge0 connection
 - [x] Monaco integration
 - [x] Login Page
 - [x] Signup Page
 - [x] Sandbox Page
-- [ ] Home Page functionalities and components 
+- [x] Home Page functionalities and components 
+- [x] Loader Animation

@@ -8,6 +8,9 @@ export default {
   ],
   theme: {
     extend: {},
+    // colors: {
+    //   bluuuu : "#0F172A",
+    // }
   },
   plugins: [daisyui],
 }

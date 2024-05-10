@@ -26,10 +26,8 @@ const SandboxOutputWindow = () => {
         return () => clearTimeout(timeout);
     }, [html, css, js, srcCode])
 
-    console.log(src)
-
     return (
-        <div className = {` ml-2 mr-2 mb-2 h-64 rounded-md ${html || css || js ? null : 'bg-#444857'}`}>
+        <div className = {`items-start mb-2 mr-2 ml-2 h-[calc(100vh-70px-49vh)] rounded-md ${html || css || js ? null : 'bg-#444857'}`}>
             <iframe 
                 className='rounded-md'
                 srcDoc={src}

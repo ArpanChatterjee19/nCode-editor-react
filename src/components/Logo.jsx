@@ -1,8 +1,9 @@
 import React from 'react'
+import logoImage from '../assets/LOGO.png'
 
 function Logo() {
   return (
-    <div>Logo</div>
+    <img src={logoImage} alt="ByteScribe" className='h-12 w-auto ml-3'/>
   )
 }
 

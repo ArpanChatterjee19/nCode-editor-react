@@ -3,7 +3,7 @@ import React from 'react'
 function Sidebar() {
   return (
     <div>
-        <aside className="flex h-screen w-16 flex-col items-center overflow-y-auto border-r bg-white py-8">
+        <aside className="flex h-[calc(100vh-73px)] w-16 mt-3 flex-col items-center overflow-y-auto border-r rounded-md bg-zinc-500 py-8">
   <nav className="flex flex-1 flex-col items-center space-y-6">
     <a href="#">
       <svg

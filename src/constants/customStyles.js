@@ -5,10 +5,10 @@ export const customStyles = {
       maxWidth: "14rem",
       minWidth: "12rem",
       borderRadius: "5px",
-      color: "#000",
+      color: "#fafafa",
       fontSize: "0.8rem",
       lineHeight: "1.75rem",
-      backgroundColor: "#FFFFFF",
+      backgroundColor: "#71717a",
       cursor: "pointer",
       border: "2px solid #000000",
       boxShadow: "5px 5px 0px 0px rgba(0,0,0);",
@@ -20,14 +20,14 @@ export const customStyles = {
     option: (styles) => {
       return {
         ...styles,
-        color: "#000",
+        color: "#fafafa",
         fontSize: "0.8rem",
         lineHeight: "1.75rem",
         width: "100%",
-        background: "#fff",
+        background: "#71717a",
         ":hover": {
           backgroundColor: "rgb(243 244 246)",
-          color: "#000",
+          color: "#71717a",
           cursor: "pointer",
         },
       };
@@ -46,7 +46,7 @@ export const customStyles = {
     placeholder: (defaultStyles) => {
       return {
         ...defaultStyles,
-        color: "#000",
+        color: "#fafafa",
         fontSize: "0.8rem",
         lineHeight: "1.75rem",
       };

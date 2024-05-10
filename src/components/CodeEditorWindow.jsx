@@ -11,7 +11,7 @@ function CodeEditorWindow({ onChange, language, code, theme, defaultValue, heigh
     };
   
     return (
-      <div className="rounded-md overflow-hidden w-full">
+      <div className="rounded-md overflow-hidden w-full h-full">
         <Editor
           height={height || '85vh'}
           width={width || `100%`}
