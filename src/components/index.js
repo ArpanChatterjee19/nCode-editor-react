@@ -15,6 +15,7 @@ import Footer from "./Footer/Footer";
 import Logo from "./Logo";
 import SandboxEditorsWindow from "./SandboxEditorsWindow";
 import SandboxOutputWindow from "./SandboxOutputWindow";
+import LogoutBtn from "./LogoutBtn";
 
 export {
     CodeEditorWindow,
@@ -34,4 +35,5 @@ export {
     Logo,
     SandboxEditorsWindow,
     SandboxOutputWindow,
+    LogoutBtn,
 }

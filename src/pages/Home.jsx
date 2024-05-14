@@ -194,7 +194,7 @@ function Home() {
             <button
               onClick={handleCompile}
               disabled={!code}
-              className={`border-2 border-black z-10 rounded-md shadow-[5px_5px_0px_0px_rgba(0,0,0)] px-4 py-2 hover:shadow transition duration-200 bg-white flex-shrink-0
+              className={`border-2 border-black z-10 rounded-xl shadow-[2px_2px_0px_0px_rgb(212,212,216)] px-4 py-2 hover:shadow transition duration-200 bg-zinc-500 flex-shrink-0 text-gray-200
                 ${!code ? "opacity-50" : ""}`}
             >
               {processing ? "Processing..." : "Compile and Execute"}

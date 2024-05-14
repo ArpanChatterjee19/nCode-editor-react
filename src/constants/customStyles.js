@@ -11,7 +11,7 @@ export const customStyles = {
       backgroundColor: "#71717a",
       cursor: "pointer",
       border: "2px solid #000000",
-      boxShadow: "5px 5px 0px 0px rgba(0,0,0);",
+      boxShadow: "2px 2px 0px 0px rgb(212, 212, 216);",
       ":hover": {
         border: "2px solid #000000",
         boxShadow: "none",

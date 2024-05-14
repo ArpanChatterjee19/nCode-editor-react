@@ -4,7 +4,7 @@ import Logo from '../Logo'
 function Header() {
   return (
     <div className='h-4 w-auto'>
-      <Logo/>
+      <Logo />
     </div>
   )
 }
