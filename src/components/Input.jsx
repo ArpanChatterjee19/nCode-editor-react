@@ -15,7 +15,7 @@ const Input = React.forwardRef( function Input ({
             }
             <input
             type={type}
-            className={`input input-bordered flex items-center gap-2 ${className}`}
+            className={`input input-bordered flex w-full items-center gap-2 ${className}`}
             ref={ref}
             {...props}
             id={id}

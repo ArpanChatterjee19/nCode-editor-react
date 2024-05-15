@@ -32,7 +32,7 @@ function Login() {
         className={`mx-auto w-full max-w-lg bg-slate-700 rounded-xl p-10 border border-black/10`}
       >
         <div className="mb-2 flex justify-center">
-          <span className="flex w-full fustiy-center">
+          <span className="flex w-full justify-center">
             <Logo classname='w-full mr-12 '/>
           </span>
         </div>
@@ -71,7 +71,6 @@ function Login() {
                 />
                 <Button
                 type="submit"
-                className="w-full"
                 >Sign In</Button>
             </div>
         </form>

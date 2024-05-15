@@ -29,11 +29,11 @@ function Signup() {
   return (
     <div className="flex items-center justify-center">
       <div
-        className={`mx-auto w-full max-w-lg bg-gray-100 rounded-xl p-10 border border-black/10`}
+        className={`mx-auto w-full max-w-lg bg-slate-700 rounded-xl p-10 border border-black/10`}
       >
         <div className="mb-2 flex justify-center">
-          <span className="inline-block w-full max-w-[100px]">
-            <Logo width="100%" />
+          <span className="flex w-full justify-center">
+            <Logo classname='w-full mr-12 '/>
           </span>
         </div>
         <h2 className="text-center text-2xl font-bold leading-tight">
@@ -52,8 +52,8 @@ function Signup() {
         <form onSubmit={handleSubmit(create)}>
           <div className="space-y-5">
             <Input
-              label="Full Name: "
-              placeholder="Enter your full name"
+              label="Userame: "
+              placeholder="Enter your username"
               {...register("name", {
                 required: true,
               })}
@@ -81,9 +81,8 @@ function Signup() {
             />
             <Button
             type = 'submit'
-            className = 'w-full'
             >
-              Create 
+              Sign Up
             </Button>
           </div>
         </form>

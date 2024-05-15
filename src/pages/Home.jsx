@@ -179,7 +179,7 @@ function Home() {
         draggable
         pauseOnHover
       />
-      <div className="flex flex-row space-x-4 items-start px-4 pt-4 h-[calc(100vh-45px)]">
+      <div className="flex flex-row space-x-2 items-start px-4 pt-4 h-[calc(100vh-45px)]">
         <Sidebar />
         <div className="flex flex-col w-full h-full justify-start items-end">
           <div className="flex flex-row justify-between w-full">
