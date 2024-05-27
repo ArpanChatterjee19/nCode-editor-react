@@ -13,7 +13,7 @@ const OutputWindow = ({ outputDetails }) => {
       );
     } else if (statusId === 3) {
       return (
-        <pre className="px-2 py-1 font-normal text-lg text-green-500">
+        <pre className="px-2 py-1 font-normal text-lg text-green-500 text-wrap">
           {atob(outputDetails.stdout) !== null
             ? `${atob(outputDetails.stdout)}`
             : null}
@@ -38,7 +38,7 @@ const OutputWindow = ({ outputDetails }) => {
       <h1 className="font-bold text-xl bg-clip-text text-transparent bg-gradient-to-r from-slate-100 to-slate-400 mb-2">
         Output
       </h1>
-      <div className="w-full h-56 bg-[#1e293b] rounded-md text-white font-normal text-lg overflow-y-auto">
+      <div className="w-full h-56 bg-[#1e293b] rounded-md text-white font-normal text-lg overflow-y-auto text-wrap">
         {outputDetails ? <>{getOutput()}</> : null}
       </div>
     </>

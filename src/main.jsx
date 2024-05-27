@@ -8,6 +8,7 @@ import Home from './pages/Home.jsx'
 import Login from './pages/Login.jsx'
 import Signup from './pages/Signup.jsx';
 import Sandbox from './pages/Sandbox.jsx';
+import Editor from './pages/Editor.jsx';
 import { AuthLayout } from './components/index.js';
 import './index.css'
 
@@ -46,6 +47,14 @@ const router = createBrowserRouter([
             element: (
                 <AuthLayout authentication>
                     <Sandbox />
+                </AuthLayout>
+            ),
+        },
+        {
+            path: "/editor",
+            element: (
+                <AuthLayout authentication>
+                    <Editor />
                 </AuthLayout>
             ),
         },

@@ -18,7 +18,7 @@ function CodeEditorWindow({ onChange, language, code, theme, defaultValue, heigh
           language={language || "javascript"}
           value={value}
           theme={theme || 'vs-dark'}
-          defaultValue={ defaultValue || "// some comment"}
+          defaultValue={ defaultValue }
           onChange={handleEditorChange}
         />
       </div>

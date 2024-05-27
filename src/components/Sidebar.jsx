@@ -36,19 +36,23 @@ function Sidebar() {
   return (
     <div>
       <aside
-        className={`flex h-[calc(100vh-73px)] mt-3 flex-col items-center overflow-y-auto border-r rounded-md bg-zinc-600 py-8 ${
+        className={`flex h-[calc(100vh-73px)] mt-3 flex-col items-center overflow-hidden border-r rounded-md bg-zinc-600 py-8 ${
           sidebarOpen ? "w-44" : "w-16"
         }`}
       >
         <nav className="flex flex-1 flex-col items-center space-y-4">
-          <NavLink to="/">
+
+          {/* Logo */}
+          {/* <NavLink to="/">
             {sidebarOpen ? (
               <img src={logoImage} alt="ByteScribe" className="h-12" />
             ) : (
               <img src={miniLogoImage} alt="ByteScribe" className="h-12" />
             )}
-          </NavLink>
-          <div className={`${sidebarOpen ? "flex justify-end pr-2 w-40" : ""}`}>
+          </NavLink> */}
+
+          {/* Toggler  */}
+          <div className={`tooltip tooltip-primary ${sidebarOpen ? "flex justify-end pr-2 w-40 " : "tooltip-top"}`} data-tip={`${sidebarOpen? "Collapse" : "Expand"}`}>
             {sidebarOpen ? (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -73,13 +77,16 @@ function Sidebar() {
               </svg>
             )}
           </div>
+
+          {/* Editor Option */}
           <NavLink
-            to="/"
+            to="/editor"
             className={({ isActive }) =>
               `rounded-lg p-1.5 text-gray-50 transition-colors duration-200 hover:bg-gray-800 focus:outline-none flex gap-2 justify-start items-center ${
-                sidebarOpen ? "w-40" : ""
+                sidebarOpen ? "w-40" : "tooltip tooltip-top tooltip-primary"
               } ${isActive ? "bg-gray-900" : ""}`
             }
+            data-tip={`${sidebarOpen? "" : "Editor"}`}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -92,13 +99,16 @@ function Sidebar() {
             </svg>
             {sidebarOpen && <span className="text-xl">Editor</span>}
           </NavLink>
+
+          {/* Playground Option */}
           <NavLink
             to="/sandbox"
             className={({ isActive }) =>
               `rounded-lg p-1.5 text-gray-50 transition-colors duration-200 hover:bg-gray-800 focus:outline-none flex gap-2 justify-start items-center ${
-                sidebarOpen ? "w-40" : ""
+                sidebarOpen ? "w-40" : "tooltip tooltip-top tooltip-primary"
               } ${isActive ? "bg-gray-900" : ""}`
             }
+            data-tip={`${sidebarOpen? "" : "Playground"}`}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -113,6 +123,8 @@ function Sidebar() {
           </NavLink>
         </nav>
         <div className="flex flex-col items-center space-y-6">
+
+          {/* Avatar & Username */}
           <div
             className={`rounded-lg p-1.5 text-gray-50 transition-colors duration-200 hover:bg-gray-800 focus:outline-none flex justify-start items-center gap-3 ${
               sidebarOpen ? "w-40" : ""
@@ -128,7 +140,9 @@ function Sidebar() {
             </p>
             {sidebarOpen && <span className="">{userName}</span>}
           </div>
-          <div className="rounded-lg p-1.5 text-gray-50 transition-colors duration-200 hover:bg-gray-800 focus:outline-none flex gap-2 justify-start items-center">
+
+          {/* Logout Button */}
+          <div className="rounded-lg p-1.5 text-gray-50 transition-colors duration-200 hover:bg-gray-800 focus:outline-none flex gap-2 justify-start items-center tooltip tooltip-top tooltip-primary" data-tip="Logout">
             <LogoutBtn />
           </div>
         </div>
